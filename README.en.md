@@ -21,20 +21,21 @@ English | [简体中文](./README.md)
 `SkyTiles` is a lightweight web platform that maps EXIF/GPS data from UAV images into a Cesium 3D scene, so you can browse photos by their real capture locations.
 
 Good for:
+
 - Spatial verification of photogrammetry image sets
 - Site image review and visual inspection
 - Lightweight 3D geospatial photo presentation
 
 ## Key Features
 
-| Feature | Description |
-| --- | --- |
-| Auto indexing | Scans `public/imgs` and generates `public/img-index/index.json` |
-| EXIF parsing | Extracts latitude, longitude, altitude, and capture time |
-| 3D marker rendering | Renders all photo points in Cesium |
-| Hover preview | Shows thumbnail preview when hovering markers |
-| Click-to-open | Opens full image in a modal overlay |
-| Incremental build | Python script supports incremental indexing for large datasets |
+| Feature             | Description                                                     |
+| ------------------- | --------------------------------------------------------------- |
+| Auto indexing       | Scans `public/imgs` and generates `public/img-index/index.json` |
+| EXIF parsing        | Extracts latitude, longitude, altitude, and capture time        |
+| 3D marker rendering | Renders all photo points in Cesium                              |
+| Hover preview       | Shows thumbnail preview when hovering markers                   |
+| Click-to-open       | Opens full image in a modal overlay                             |
+| Incremental build   | Python script supports incremental indexing for large datasets  |
 
 <!--
 ## Screenshots
@@ -147,12 +148,20 @@ SkyTiles/
 └─ README.en.md
 ```
 
-## Roadmap
+## Roadmap / Todo
 
-- [ ] Add layer filtering and time-based controls
-- [ ] Support route-based grouping
-- [ ] Provide an online demo deployment
-- [ ] Move Cesium token to environment variables
+- [ ] Move Cesium token from code to environment variables (`.env`)
+- [ ] Improve index script error handling and logging (including failure stats)
+- [ ] Standardize project configuration and directory conventions
+- [ ] Add time filtering and route/batch grouping
+- [ ] Add image list and map-linked navigation
+- [ ] Unify UI style (colors, typography, spacing, radius, shadow)
+- [ ] Add top toolbar and info panel for better usability
+- [ ] Improve image preview modal (filename, time, coordinate details)
+- [ ] Add loading, empty, and error states
+- [ ] Add marker clustering/layered rendering for large datasets
+- [ ] Add thumbnail lazy loading and caching strategy
+- [ ] Support data export (filtered results and annotation records)
 
 ## Contributing
 
