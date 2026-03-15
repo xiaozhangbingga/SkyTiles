@@ -8,7 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Cesium](https://img.shields.io/badge/Cesium-3D%20Map-6cadde?style=for-the-badge)](https://cesium.com/platform/cesiumjs/)
-[![License](https://img.shields.io/badge/License-MIT-2ea043?style=for-the-badge)](./LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-d22128?style=for-the-badge)](./LICENSE)
 
 English | [简体中文](./README.md)
 
@@ -36,6 +36,7 @@ Good for:
 | Click-to-open | Opens full image in a modal overlay |
 | Incremental build | Python script supports incremental indexing for large datasets |
 
+<!--
 ## Screenshots
 
 > Add your screenshots here for a cooler GitHub landing page.
@@ -54,6 +55,7 @@ Example markdown:
 ![Map View](./assets/map-view.png)
 ![Photo Preview](./assets/preview-modal.png)
 ```
+-->
 
 ## Tech Stack
 
@@ -169,4 +171,4 @@ Contributions are welcome via issues and pull requests.
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [Apache License 2.0](./LICENSE).

@@ -8,7 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Cesium](https://img.shields.io/badge/Cesium-3D%20Map-6cadde?style=for-the-badge)](https://cesium.com/platform/cesiumjs/)
-[![License](https://img.shields.io/badge/License-MIT-2ea043?style=for-the-badge)](./LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-d22128?style=for-the-badge)](./LICENSE)
 
 [English](./README.en.md) | 简体中文
 
@@ -21,21 +21,23 @@
 `SkyTiles（司图）` 用于将无人机影像中的 EXIF/GPS 信息映射到 Cesium 三维场景，实现“按拍摄位置回看照片”的交互式浏览体验。
 
 适用于：
+
 - 航测影像空间位置核查
 - 项目现场影像回溯与可视化巡检
 - 轻量级三维地图照片展示
 
 ## 功能亮点
 
-| 能力 | 说明 |
-| --- | --- |
-| 自动索引 | 扫描 `public/imgs` 并生成 `public/img-index/index.json` |
-| EXIF 解析 | 提取经纬度、高程、拍摄时间等信息 |
-| 3D 点位渲染 | 将照片批量渲染到 Cesium 三维地图 |
-| 悬停预览 | 鼠标移动到点位时显示缩略图 |
-| 点击大图 | 点击点位打开原图查看 |
-| 增量构建 | Python 脚本支持增量索引，适配大批量数据 |
+| 能力        | 说明                                                    |
+| ----------- | ------------------------------------------------------- |
+| 自动索引    | 扫描 `public/imgs` 并生成 `public/img-index/index.json` |
+| EXIF 解析   | 提取经纬度、高程、拍摄时间等信息                        |
+| 3D 点位渲染 | 将照片批量渲染到 Cesium 三维地图                        |
+| 悬停预览    | 鼠标移动到点位时显示缩略图                              |
+| 点击大图    | 点击点位打开原图查看                                    |
+| 增量构建    | Python 脚本支持增量索引，适配大批量数据                 |
 
+<!--
 ## 界面预览
 
 > 你可以在这里放项目截图，发布到 GitHub 时观感会更好。
@@ -54,6 +56,7 @@ assets/
 ![Map View](./assets/map-view.png)
 ![Photo Preview](./assets/preview-modal.png)
 ```
+-->
 
 ## 技术栈
 
@@ -169,4 +172,4 @@ SkyTiles/
 
 ## 许可证
 
-本项目基于 [MIT License](./LICENSE) 开源。
+本项目基于 [Apache License 2.0](./LICENSE) 开源。
